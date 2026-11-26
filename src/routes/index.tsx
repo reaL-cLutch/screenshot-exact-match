@@ -36,7 +36,7 @@ function Landing() {
         </Link>
       </header>
       <main className="relative z-10 mx-auto max-w-6xl px-6 pb-24 pt-16 md:pt-28">
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
+        <motion.div initial={{ y: 16 }} animate={{ y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
           <div className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary" /> Multi-university mentorship network
           </div>
@@ -60,8 +60,8 @@ function Landing() {
           {features.map((f, i) => (
             <motion.div
               key={f.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.6 }}
               className="glass rounded-2xl p-6"
